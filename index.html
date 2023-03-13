@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comments-block</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="article">
+            <h1 class="article__title">Заменит ли искусственный интеллект программистов?</h1>
+            <blockquote class="article__block">
+                <p class="paragraph article__paragraph-a">
+                    В онлайн-соревнованиях по программированию нейросеть AlphaCode обошла 45% программистов. И хотя она
+                    входит в 54% лучших программистов, ей не удается всецело заменить человека. Впрочем, сместить
+                    сотрудников уровня Junior и Middle нейросети по силам, что, конечно, не может не беспокоить
+                    айтишников.
+                </p>
+                <p class="paragraph article__paragraph-b">
+                    Недавно один пользователь опубликовал браузерную игру Space Miner, полностью созданную нейросетью.
+                    Все что сделал разработчик – это собрал материалы, сгенерированные ИИ, в готовое решение на Unity и
+                    загрузил онлайн как готовый проект. Для запуска игры ничего дополнительно скачивать не нужно.
+                </p>
+                <p class="paragraph article__paragraph-c">
+                    Вокруг ИИ не утихают споры, ведь чего стоят одни чат-боты. Так, ChatGPT сдала экзамен по
+                    юриспруденции и бизнес-менеджменту в двух университетах США и составила текст для речи конгрессмену
+                    США. Также ИИ написала статью журналисту. Единственным минусом было лишь то, что текст оказался
+                    «сухим», безэмоциональным. Кстати, за написание той статьи мужчине предложили 615 долларов.
+                </p>
+                <h2 class="article__subtitle">А как думаете Вы? Сможет ли ИИ заменить программистов? Предлагаю обсудить
+                    этот вопрос в комментариях.</h2>
+            </blockquote>
+            <button class=" button article__button" type="button">
+                <span class="article__button-span">Оставить комментарий</span>
+            </button>
+        </section>
+        <section class="form">
+            <form class="form__form-wrap">
+                <input name="name" type="text" class="input form__input-name" placeholder="Ваше имя" required>
+                <span class="form__error-name"></span>
+                <input name="text" type="text" class="input form__input-text" placeholder="Текст комментария">
+                <div class="form__input-wrapper">
+                    <label for="">Дата: <input type="checkbox" class="form__input-checkbox"></label>
+                    <input type="date" class="input form__input-date">
+                </div>
+                <button class="button form__button-input" type="submit">Отправить</button>
+            </form>
+        </section>
+        <div class="message">
+            <h3 class="message__title">Комментарии:</h3>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

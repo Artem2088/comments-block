@@ -1,0 +1,41 @@
+.form {
+    display: none;
+    flex-direction: column;
+    max-width: 600px;
+    border: 1px solid $colorGray;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+
+    &__form-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: inherit;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    &__input-name {
+        border: none;
+        border-bottom: 1px solid $colorGray;
+    }
+
+    &__input-text {
+        border: none;
+        border-bottom: 1px solid $colorGray;
+    }
+
+    &__error-name {
+        position: absolute;
+        color: $colorRed;
+        left: 20px;
+        top: 40px;
+    }
+
+}

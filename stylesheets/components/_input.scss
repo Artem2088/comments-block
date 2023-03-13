@@ -1,0 +1,9 @@
+.input {
+    list-style: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+}

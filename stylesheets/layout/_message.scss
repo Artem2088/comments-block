@@ -1,0 +1,52 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+
+
+    &__title {
+        font-size: 22px;
+        line-height: 24px;
+        padding: 20px 0;
+    }
+
+    &__span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        border-bottom: 1px solid $colorBlack;
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    &__btn-delete {
+        width: 30px;
+        height: 30px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-image: url('../../assets/icons/delete.svg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+
+    &__btn-like {
+        width: 30px;
+        height: 30px;
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-image: url('../../assets/icons/like.svg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+
+        &_activ {
+            background-image: url('../../assets/icons/like-activ.svg');
+        }
+    }
+
+}
